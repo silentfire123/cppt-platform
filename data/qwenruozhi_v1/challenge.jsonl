@@ -1,0 +1,2 @@
+{"messages":[{"role":"user","content":"API 服务正常是否代表 GPU 已经就绪？"},{"role":"assistant","content":"不是。API 健康检查不等于远程 GPU、模型和训练框架已经可用。"}]}
+{"messages":[{"role":"user","content":"演示数据可以证明模型效果吗？"},{"role":"assistant","content":"不能。少量演示样例仅用于验证数据格式和流程，不代表真实评测结果。"}]}

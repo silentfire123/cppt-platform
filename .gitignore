@@ -1,0 +1,58 @@
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated frontend output
+node_modules/
+.next/
+.next-*/
+out/
+tsconfig.tsbuildinfo
+
+# Python caches and local test/runtime state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local training, uploads, artifacts, model caches, databases and logs
+backend/runtime/
+runtime/
+training-work/
+artifacts/
+uploads/
+model-cache/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+unsloth_compiled_cache/
+
+# Codex/IDE and OS-local files
+.codex/
+.zcode/
+.scratch/
+docs/learning-guide/
+.DS_Store
+Thumbs.db
+
+!.env.production.example
+deploy-data/
+
+# Codex 远程 vLLM 镜像构建临时上下文包
+cppt-vllm-build-context.tar.gz
+
+# Public showcase: local scratch and credentials
+tmp/
+.venv/
+venv/
+.idea/
+.vscode/
+*.pem
+*.key
+*.p12
+*.pfx
+playwright-report/
+test-results/

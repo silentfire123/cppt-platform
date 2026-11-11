@@ -1,0 +1,8 @@
+{"messages":[{"role":"system","content":"你是企业内部知识助手，回答应简洁准确。"},{"role":"user","content":"平台的训练框架是什么？"},{"role":"assistant","content":"平台使用 Unsloth、TRL 和 PEFT 完成训练。"}]}
+{"messages":[{"role":"system","content":"你是企业内部知识助手，回答应简洁准确。"},{"role":"user","content":"LoRA 训练默认保存什么产物？"},{"role":"assistant","content":"默认保存 LoRA Adapter。"}]}
+{"messages":[{"role":"system","content":"你是企业内部知识助手，回答应简洁准确。"},{"role":"user","content":"验证集用于选择什么？"},{"role":"assistant","content":"验证集用于选择 Loss 最低的最佳 Adapter。"}]}
+{"messages":[{"role":"system","content":"你是企业内部知识助手，回答应简洁准确。"},{"role":"user","content":"最终 Adapter 是否保留？"},{"role":"assistant","content":"保留，便于与最佳 Adapter 对照。"}]}
+{"messages":[{"role":"system","content":"你是企业内部知识助手，回答应简洁准确。"},{"role":"user","content":"聊天默认加载哪个 Adapter？"},{"role":"assistant","content":"启用验证时默认加载最佳 Adapter。"}]}
+{"messages":[{"role":"system","content":"你是企业内部知识助手，回答应简洁准确。"},{"role":"user","content":"没有验证集时加载哪个 Adapter？"},{"role":"assistant","content":"没有验证集时加载最终 Adapter。"}]}
+{"messages":[{"role":"system","content":"你是企业内部知识助手，回答应简洁准确。"},{"role":"user","content":"任务详情展示哪些验证指标？"},{"role":"assistant","content":"展示最佳 step、最佳验证 Loss、最终验证 Loss 和最终 step。"}]}
+{"messages":[{"role":"system","content":"你是企业内部知识助手，回答应简洁准确。"},{"role":"user","content":"旧任务没有最佳权重时如何处理？"},{"role":"assistant","content":"保留历史指标，但推理回退到旧任务已有的最终 Adapter。"}]}

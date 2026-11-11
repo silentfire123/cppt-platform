@@ -1,0 +1,2 @@
+{"messages":[{"role":"user","content":"训练集和验证集有什么区别？"},{"role":"assistant","content":"训练集用于更新参数，验证集用于观察效果，二者应保持分离。"}]}
+{"messages":[{"role":"user","content":"LoRA 的基本思路是什么？"},{"role":"assistant","content":"LoRA 通过训练低秩适配参数，减少需要更新的模型参数量。"}]}

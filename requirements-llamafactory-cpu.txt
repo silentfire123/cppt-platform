@@ -1,0 +1,13 @@
+# Versions reproduced from the successful WSL CPU acceptance environment.
+llamafactory==0.9.5
+transformers==5.6.0
+datasets==4.0.0
+peft==0.18.1
+trl==0.24.0
+accelerate==1.11.0
+modelscope==1.39.1
+PyYAML==6.0.3
+sentencepiece==0.2.2
+protobuf==7.36.0
+safetensors==0.8.0
+tokenizers==0.22.2

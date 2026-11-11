@@ -1,0 +1,2 @@
+# Official vLLM CPU release wheel for Intel/AMD x86_64.
+https://github.com/vllm-project/vllm/releases/download/v0.27.1/vllm-0.27.1+cpu-cp38-abi3-manylinux_2_34_x86_64.whl

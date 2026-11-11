@@ -1,0 +1,4 @@
+{"messages":[{"role":"user","content":"什么是模型微调？"},{"role":"assistant","content":"模型微调是在预训练模型的基础上，使用特定任务的数据继续训练。"}]}
+{"messages":[{"role":"user","content":"SFT 数据需要包含什么？"},{"role":"assistant","content":"这个演示使用 messages 列表，每条消息包含 role 和 content。"}]}
+{"messages":[{"role":"user","content":"训练任务如何跟踪状态？"},{"role":"assistant","content":"平台记录任务状态、运行日志和指标，前端通过接口或流式连接获取更新。"}]}
+{"messages":[{"role":"user","content":"模型文件为什么要备份到对象存储？"},{"role":"assistant","content":"对象存储用于保存训练产物，减少实例释放后文件丢失的风险。"}]}

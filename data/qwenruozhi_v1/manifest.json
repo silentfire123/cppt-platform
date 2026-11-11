@@ -1,0 +1,16 @@
+{
+  "version": "public-demo-v1",
+  "source": "Synthetic platform-workflow examples for format and process demonstration only",
+  "counts": {
+    "train": 4,
+    "val": 2,
+    "test": 2,
+    "challenge": 2
+  },
+  "files": {
+    "train.jsonl": "74208902ab168dc0e5f0c0fa6eb9a74da6c84639cd4bf039d112d14ae733d582",
+    "val.jsonl": "796b341f304a65a74dd84b88268b334670835a86f4b60a64f73c8aa9911abb92",
+    "test.jsonl": "38151504d157eb81f609c98627fb1db5214075c243319a4cdb3b36587db41098",
+    "challenge.jsonl": "6db39ff81601fd88f47beb1c09c543694227752badb2b271c1585ce5cea6163c"
+  }
+}
