@@ -44,7 +44,7 @@ deploy-data/
 # Codex 远程 vLLM 镜像构建临时上下文包
 cppt-vllm-build-context.tar.gz
 
-# Public showcase: local scratch and credentials
+# Local scratch and credentials
 tmp/
 .venv/
 venv/

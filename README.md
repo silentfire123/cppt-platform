@@ -2,7 +2,7 @@
 
 基于 **Next.js + FastAPI** 的模型训练与推理管理平台，将数据集管理、SFT / DPO 微调、模型产物管理和推理服务串成可追踪的工作流。
 
-这是用于项目交流与面试展示的精简版本：保留核心实现和回归测试，移除原型页面、内部运维记录、历史发布流水线、私有配置和真实训练语料。**不是开箱即用的 GPU 演示环境**，也不包含模型权重。
+支持本地开发与远程 GPU 执行，提供任务状态、运行日志及模型产物管理。仓库包含运行配置、回归测试与样例数据；实际训练和推理需自行配置模型、GPU 与相应运行环境。
 
 ## 核心能力
 
@@ -28,7 +28,7 @@ flowchart LR
   TRAIN --> OBJ
 ```
 
-具体职责和边界见 [ARCHITECTURE.md](ARCHITECTURE.md)。面试讲解路线见 [项目讲解指南](docs/INTERVIEW_GUIDE.md)。
+具体职责和边界见 [ARCHITECTURE.md](ARCHITECTURE.md)。代码导览见 [开发指南](docs/CODE_GUIDE.md)。
 
 ## 本地启动：不需要 GPU
 
@@ -102,7 +102,7 @@ data/qwenruozhi_v1/      小型合成 SFT 样例（保留旧 ID 兼容接口）
 test-data/              DPO / checkpoint 回归样例
 scripts/                启动、数据转换与手动验收工具
 deploy/docker/          前后端 Dockerfile
-docs/INTERVIEW_GUIDE.md  代码导览、项目亮点与能力边界
+docs/CODE_GUIDE.md       代码导览、设计要点与运行检查
 ```
 
-本仓库未上传真实密钥、环境文件、数据库、模型权重、缓存、日志、个人简历或原私有仓库的提交历史。
+真实密钥、环境文件、数据库、模型权重、缓存及日志不纳入版本控制。
