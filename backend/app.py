@@ -4359,7 +4359,11 @@ def _dataset_source_path(dataset: dict[str, Any]) -> Path:
         raise HTTPException(status_code=409, detail="数据集没有可用的训练文件。")
     path = Path(raw).expanduser().resolve()
     root = DATASET_ROOT.expanduser().resolve()
-    if not path.is_file() or not path.is_relative_to(root):
+    builtin = BUILTIN_DATASETS.get(str(dataset.get("id", "")))
+    trusted_builtin = bool(dataset.get("builtin")) and builtin is not None and path == Path(
+        str(builtin["trainPath"])
+    ).expanduser().resolve()
+    if not path.is_file() or not (path.is_relative_to(root) or trusted_builtin):
         raise HTTPException(status_code=409, detail="数据集内容文件不存在或不在受控目录内。")
     return path
 
